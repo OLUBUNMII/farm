@@ -1,0 +1,103 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: 'Open Sans' Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+h2 span{
+    color: white;
+}
+
+nav {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	padding: 15px;
+}
+
+nav ul li {
+	list-style: none;
+    align-items: flex-end;
+	display: inline-block;
+	padding: 10px 15px;
+}
+
+nav ul li a {
+	color: #1d1d24;
+	position: relative;
+	padding: 5px 0;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: green;
+    text-decoration: none;
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: green;
+	transition: 0.3s;
+	bottom: 0;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+.button {
+	color: black;
+	font-size: 13px;
+    text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px 10px;
+	border-radius: 500px;
+	display: inline-block;
+	font-weight: 500;
+	transition: all 0.4s ease-in-out;
+	background-size: 152% 100%;
+	background: rgb(107, 243, 107);
+	border: 2px solid rgb(107, 243, 107);
+}
+
+.button:hover {
+	background: transparent;
+	border-color: rgb(107, 243, 107);
+	color: rgb(107, 243, 107);
+    text-decoration: none;
+}
+
+.hero-image{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+	url("img/header22.jpg");
+	height: 87%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-text{
+	text-align: left;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	left: 10%;
+	color: white;
+}
+
